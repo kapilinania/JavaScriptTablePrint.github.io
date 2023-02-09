@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: sans-serif;
+            font-size: 25px;
+        }
+
+        body {
+            background: linear-gradient(90deg, rgba(45, 149, 160, 1) 0%, rgba(0, 188, 212, 1) 50%, rgba(238, 130, 238, 1) 100%);
+
+        }
+
+        #kali {
+            font-family: sans-serif;
+            font-size: 30px;
+        }
+
+        .main {
+            width: 50%;
+            margin: 100px auto;
+        }
+
+        .input_text {
+            padding: 10px 0px 10px 10px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        *:focus {
+            outline: none;
+        }
+
+        .btn {
+            background: #3498db;
+            background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+            background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+            background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+            background-image: -o-linear-gradient(top, #3498db, #2980b9);
+            background-image: linear-gradient(to bottom, #3498db, #2980b9);
+            -webkit-border-radius: 28;
+            -moz-border-radius: 28;
+            border-radius: 28px;
+            font-family: Arial;
+            color: #ffffff;
+            font-size: 23px;
+            padding: 10px 21px 10px 20px;
+            text-decoration: none;
+            border: none;
+        }
+
+        .btn:hover {
+            background: #3cb0fd;
+            background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+            background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+            background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+            background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+            background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        // use 3 variable and create a function and do it...
+        function display() {
+            let a, b, c;
+            b = form.kapil.value;
+            for (a = 1; a <= 10; a++) {
+                c = a * b
+                // console.log(c);
+                document.getElementById('kali').innerHTML += c + "<br>";
+
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <form action="" name="form">
+            <label for="" class="lable_input">Enter a Number</label>
+            <input type="text" name="kapil" class="input_text">
+            <input type="button" name="" id="" onClick="display()" value="Display Table" class="btn">
+            <p id="kali"></p>
+        </form>
+    </div>
+</body>
+
+</html>
